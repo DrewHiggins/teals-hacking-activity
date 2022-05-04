@@ -1,6 +1,6 @@
 function encrypt(plaintext) {
     plaintext = plaintext.toUpperCase();
-    var key = 4;
+    var key = 5;
     var cipherText = "";
     for (var i = 0; i < plaintext.length; i++) {
         var charCode = plaintext.charCodeAt(i) - 65;
@@ -14,7 +14,7 @@ function checkPassword() {
     document.getElementById('access-denied-msg').style = "display:none";
     var password = document.getElementById('passwd').value;
     var encryptedPass = encrypt(password);
-    var encryptedTarget = 'GLIPERKSEXWGW';
+    var encryptedTarget = 'HMJQFSLTFYXHX';
     console.log('Password input as ', password);
     console.log('Encrypting password as ', encryptedPass);
     console.log('Comparing to ', encryptedTarget);
